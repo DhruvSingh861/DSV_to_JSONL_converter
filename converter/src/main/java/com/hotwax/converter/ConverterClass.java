@@ -40,15 +40,19 @@ public class ConverterClass {
         System.out.println("Enter delimeter present in DSV file");
         String delimeter = sc.nextLine();
         String currDirPath = System.getProperty("user.dir");
-        String input = currDirPath + "\\" + inputFileName;
-        String output = currDirPath + "\\output1.jsonl";
+        String input = currDirPath + "//" + inputFileName;
+        String output = currDirPath + "/output1.jsonl";
+        convert(input,output,delimeter);
+
+    }
+    public static void convert(String input, String output, String delimeter){
+        
         String row;
         String headers[] = null;
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(input));
-            // new InputStreamReader(new FileInputStream(input), StandardCharsets.UTF_8));
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(output));
-            // new OutputStreamWriter(new FileOutputStream(input), StandardCharsets.UTF_8));
+            System.out.println(output);
             while ((row = bufferedReader.readLine()) != null) {
                 if (headers == null) {
                     headers = row.split("[" + delimeter + "]");
@@ -85,9 +89,8 @@ public class ConverterClass {
             bufferedWriter.close();
             System.out.println(System.getProperty("user.dir"));
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("File you entered is not found in current directory, Pelase check if you have entered the wrong name (mention the extentions as well)");
         }
-
     }
 
     private static JSONObject getJSONObject(String headers[], String[] data) {
