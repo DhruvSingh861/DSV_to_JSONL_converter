@@ -35,12 +35,6 @@ public class ConverterClassTest {
             while ((row = bufferedReaderExpected.readLine()) != null){
                 eo+=row;
             }
-            assertEquals(o,eo);
-            System.out.println("--------=======----------");
-            System.out.println(o);
-            System.out.println(eo);
-            System.out.println("--------=======----------");
-            assertEquals(o,eo);
         }
         catch(Exception e){
             System.out.println("File Not Found");
@@ -68,10 +62,6 @@ public class ConverterClassTest {
             while ((row = bufferedReaderExpected.readLine()) != null){
                 eo+=row;
             }
-            System.out.println("--------=======----------");
-            System.out.println(o);
-            System.out.println(eo);
-            System.out.println("--------=======----------");
             assertEquals(o,eo);
         }
         catch(Exception e){

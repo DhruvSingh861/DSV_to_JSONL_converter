@@ -41,7 +41,8 @@ public class ConverterClass {
         String delimeter = sc.nextLine();
         String currDirPath = System.getProperty("user.dir");
         String input = currDirPath + "//" + inputFileName;
-        String output = currDirPath + "/output1.jsonl";
+        System.out.println("Enter the name of the output file");
+        String output=currDirPath +"/" + sc.nextLine();
         convert(input,output,delimeter);
 
     }

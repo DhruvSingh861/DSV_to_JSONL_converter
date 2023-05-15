@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.hotwax.converter.ConverterClassTest" time="0.019" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.hotwax.converter.ConverterClassTest" time="0.024" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Ubuntu-0ubuntu120.04.1"/>
@@ -61,6 +61,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.hotwax.converter.ConverterClassTest" name="com.hotwax.converter.ConverterClassTest.test2" time="0.019"/>
-  <testcase classname="com.hotwax.converter.ConverterClassTest" name="com.hotwax.converter.ConverterClassTest.test1" time="0"/>
+  <testcase classname="com.hotwax.converter.ConverterClassTest" name="com.hotwax.converter.ConverterClassTest.test1" time="0.016"/>
+  <testcase classname="com.hotwax.converter.ConverterClassTest" name="com.hotwax.converter.ConverterClassTest.test2" time="0.008"/>
 </testsuite>
